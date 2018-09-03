@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>takwira.tn</title>
+  <link rel="icon" href="res/logo.png">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styledashboard.css">
+</head>
+<body>
+<div class="row">
+<nav class="navbar navbar-inverse col-md-12">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="home"><a href="../Home/home.html">Home</a></li>
+        <li class=" active dashboard"><a  href="dashboard.html">Dashboard</a></li>
+        <li ><a  href="annonce.html">ads</a></li>
+
+     </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="outBtn"href="home.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="contaiiner-fluid w3-container ">
+  <div class="row">
+    <div class="col-md-12 heading"> <H1 class="heading-text"> <span class="w3-center w3-animate-top"> Hi again! Welcome To Your Dashboard. Here You Can Edit</span> <span class="w3-center w3-animate-opacity"> Your Profile, See Your Current And Played Matches And </span> <span class="w3-center w3-animate-bottom"> Find Games To Play. </span></H1></div>
+  <div class="col-md-4 col-sm-12 profile-container">
+    <div class="profile-img-container">
+        <img class="profile-img img-circle" src="res/ball.png" alt="">
+        
+    </div>
+    <div class="container">
+      
+    <div class="profileInfo">
+      <label >State:</label>
+      <label for="state" class="trueLeader">Player</label>
+      <hr class=" line">
+      <label>First Name:</label>
+      <label id="firstNamedashboard"for="firstName" class="trueName"></label>
+      <hr class="line"> 
+      <label >Last Name:</label>
+      <label  id="LastNamedashboard"for="LastName" class="trueLastName"></label>
+      <hr class="line">
+      <label >Age:</label>
+      <label id="agedashboard" for="age" class="trueAge"></label>
+      <hr class="line">
+      <label >Phone Number:</label>
+      <label id="phonedashboard" for="number" class="trueNumber"></label>
+      <hr class=" line">
+      <label >Email Address:</label>
+      <label id="emaildashboard"for="email" class="trueEmail"></label>
+      <hr class=" line">
+      <div class="forTeamLeaders"> <label ></label>
+      <label for="team" class="trueTeam"></label> </div>
+
+    </div>
+      
+    </div>
+    
+  </div>
+
+<div class="col-md-8 col-sm-12 match-recap">
+  <h2>Match Summary</h2>
+  <div class="current-matches"> 
+    <h2>Current Matches</h2> 
+    <div class="alert alert-info">
+      <strong>Sorry!</strong> You Are Not Playing Any Match.</div>
+      <button style="float:left; width:45%; height:35px" data-toggle="modal" data-target="#match-making" class="btn btn-primary" data-toggle="collapse" data-target="#myModal1"> Match Making </button>
+              
+      <button style="float:right; width:45%; height:35px" data-toggle="modal" data-target="#join-team" class="btn btn-primary ">Join A Team</button>  </div>
+
+     
+     <div class="current-matches"> 
+        <h2>Played Matches</h2> 
+        <div class="alert alert-info">
+          <strong>Sorry!</strong> You Didn't Play Any Match.</div>
+           
+         </div>
+    
+    </div>
+
+
+
+  </div>
+</div>
+  <div class="container">
+    <div class="modal fade" id="match-making" role="dialog">
+      <div class="modal-dialog">
+      
+        <div class="modal-content" >
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title"> <center> Find A Team To Play Against</center></h2>
+          </div >
+          <div class="modal-body" >
+           <form id="creat-match"> 
+             <label>Name Of Your Team:</label> <input id="nameofteam"type="text">
+             <br> <br>
+             <label>Leader Name:</label>
+             <input id="leadername"type="text">
+             <br> <br>
+             <label>date:</label>
+             <input id="date"type="text">
+             <br> <br>
+             <label>Your Phone Number:</label>
+             <input id="phone"type="text">
+             <br> <br>
+             <label>Your Localisation:</label>
+             <input id="localisation"type="text">
+             <br> <br> <br>
+             <center> <button class="btn btn-action"> GO ! </button> </center>
+  
+  
+  
+  
+            
+           </form>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  
+    <div class="container">
+        <div class="modal fade" id="join-team" role="dialog">
+          <div class="modal-dialog">
+          
+            <div class="modal-content" >
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title"> <center>Available Teams :</center></h2>
+              </div>
+              <div class="modal-body" >
+               <form> 
+                 
+                 <center> <button disabled class="btn btn-primary"> GO ! </button> </center>
+      
+      
+      
+      
+                
+               </form>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        </div>
+   
+  
+
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/maindashboard.js"></script>
+
+</html>

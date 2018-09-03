@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kawer.tn</title>
+  <link rel="icon" href="res/logo.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse col-md-12">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Kawer.tn</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="home active"><a href="#">Home</a></li>
+        <li class="dashboard" style="display:none"><a  href="#">Dashboard</a></li>
+     </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" type="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#" type="button" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="res/pic4.jpg"  style="width:100%; height: 15cm">
+      </div>
+
+      <div class="item">
+        <img src="res/pic5.jpg"  style="width:100%; height: 15cm;">
+      </div>
+    
+      <div class="item">
+        <img src="res/pic3.jpg" style="width:100%; height: 15cm">
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 blocks-heading "><h1>Do you want to play football and you're facing some problems ? Don't worry we got you back! This is why our website is the best: </h1></div>
+    <div class="col-md-4 col-sm-6 blocks block1" data-aos="fade-down-right">  <div class="image-container" > <h2>Join a Team</h2>
+       <img id="img1" class="img-responsive"    src="res/player.png" alt="">  </div>
+        <div class="text-container" data-aos="zoom-in-right">If you are an individual player and you are searching for a team
+           to play with, our website is the solution. In fact, you can find a lot of teams that are searching for players.
+        Maximum players in one team are 6. Think About it, you can meet new friends,
+         play with them and share your passion for football. Sign up Now!</div> </div>
+    <div class="col-md-4 col-sm-6 blocks block2" data-aos="fade-down"> <div class="image-container"> <h2>Find Players</h2>
+       <img id="img2" class="img-responsive" src="res/players.png" alt=""> </div>
+        <div class="text-container" data-aos="zoom-in-up">If you have a full team and you are searching for another team to 
+          play against it, our website is the solution. In fact, you can find other teams that have the
+           same problem as you do, contact them and enjoy your match!</div> </div>
+    <div class="col-md-4 blocks block3" data-aos="fade-down-left"> <div class="image-container"> <h2>Book a Field</h2> <img class="img-responsive" id="img3" src="res/field.png" alt=""> </div>
+    <div class="text-container not-available"data-aos="zoom-in-left" >Now you have a full team and another team to play against it but you 
+      still have a little problem. Where to play the match? koura.tn thought about everything.
+       In fact, you can book a field and meet there at a specified time you all agree on it. <br><div class="alert alert-warning" style="margin-top:18px;">
+          <strong>Sorry!</strong> This Service Is Not Available. </div></div></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content" >
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"> <center> Create A New Account</center></h2>
+        </div>
+        <div class="modal-body" >
+         <center> <img src="res/soccerball.png" id="ball"> </center>
+            <div  class="alert alert-success" style="display:none">
+                <strong>Success!</strong> Thank You For Joining Us</div>
+          <form id="sign-up-form">
+            
+        <label>First Name</label>
+            <input type="text" id="firstName" placeholder="ex: hassen"> 
+            <br> <br>
+            <label >Last Name</label>
+            <input type="text" id="lastName" placeholder="ex: jalleli">
+            
+              <br> <br>
+                <label>Age</label>
+                <input type="number" id="age" min="12" max="70" placeholder="ex: 20"> 
+                <br> <br>
+                   <label>Email Address</label>
+                  <input type="email" id="email" placeholder="ex: ex@gmail.com"> 
+                  <br> <br>
+                     <label>Phone Number</label>
+                    <input type="number" id="phoneNumber" placeholder="ex: 12 320 146"> 
+                    <br> <br> 
+                    <label>Password</label>
+                    <input type="password" id="password">
+                    <br> <br> <br>
+                <center>    <button id="sign" class="btn btn-action" >sign up</button> </center>
+                    <br> <br>
+                    
+            
+            </div>
+          </form>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+        
+          <div class="modal-content" >
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title"> <center>Log In To An Existing Account</center></h2>
+            </div>
+            <div class="modal-body" >
+             <center> <img src="res/login.png" id="ball"> </center>
+                
+              <form id="log">
+                
+                  <div  class="alert alert-success" style="display:none">
+                      <strong>Success!</strong> Thank You For Joining Us</div> 
+
+                       <label>Email Address</label>
+                      <input type="email" id="username" placeholder="ex: ex@gmail.com"> 
+                      <br> <br>
+                          <label>Password</label>
+                          <input type="password" id="pas">  
+                          <br> <br> <br>
+                      <center>    <button id="login" type="submit">Login</button>    </center>                   
+                    
+                
+                </div>
+              </form>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+  
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</html>

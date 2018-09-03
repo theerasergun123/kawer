@@ -1,0 +1,127 @@
+*{padding:0; margin: 0 }
+body{
+    background-color: #006064;
+}
+
+.navbar{
+    background-color: #004D40;
+    border: none;
+    margin-bottom: 0 !important;
+    
+}
+.profile-container{
+    background-color: #607D8B;
+    height: 600px;
+    border-radius: 50px;
+    
+}
+.heading-text{
+    
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5cm; 
+    color: bisque;
+    
+}
+.profile-img-container{
+    width: 104%;
+    height:150px ;
+}
+.profile-img{
+    margin-left:32%;
+    padding: 5px;
+    width: 140px;
+    height: 140px;
+}
+.profileInfo{
+    margin-top: 20px; 
+}
+.trueName, .trueLastName{
+    margin-left: 2cm;
+}
+.trueAge{
+   margin-left:  3.4cm
+}
+.trueNumber, .trueEmail {
+    margin-left: 1.5cm;
+}
+
+.line{
+    max-width: 400px;
+}
+.match-recap{
+    height:600px ;
+    background-color: #607D8B;
+    border-radius: 50px;
+
+
+}
+h2{
+    text-align: center;
+    color: rgb(78, 54, 3) ;
+}
+.current-matches{
+    overflow-y: scroll;
+    height: 200px;
+    background-color: #B0BEC5;
+    width: 100%;
+    margin-top: 1cm;
+    border-radius: 30px;
+}
+.play-match{
+    float:right;
+    margin-top: 1cm;
+    width: 100px;
+
+}
+.status{
+    float:right;
+    margin-right: 70px;
+    margin-top: 2.5cm;
+}
+
+.trueTeam{
+    margin-left: 3.1cm;
+}
+.trueLeader{
+    margin-left: 3cm;
+    color :rgb(0, 54, 49);
+}
+input{
+    float: right;
+}
+form label{
+    float: left;
+    color: whitesmoke;
+    font-size: 16px
+}
+.modal-content{
+    background: url("https://images.unsplash.com/photo-1521798948753-02f843fd3e5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a2059a47213b313bb76f8996273d794&auto=format&fit=crop&w=750&q=80")
+
+}
+.modal-content h2{
+    color: white
+}
+input:hover{
+    border: 2.5px solid #66BB6A;
+}
+input{
+    height: 0.7cm;
+    padding-left: 3px; 
+}
+
+.true{
+    margin-left: 6cm;
+}
+.blockss{
+    margin-top: 30px;
+   background-color:  #00ACC1;
+   background-clip: content-box;
+   border-radius: 50px;
+  
+}
+.textt{
+    margin-left: 1cm;
+}
